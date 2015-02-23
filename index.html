@@ -17,7 +17,9 @@
 
 </div>
 
-<div class="js-tags"></div>
+<div class="js-tags">
+  <ul class="js-tags-ul"></ul>
+</div>
 
 
 <script type="text/template" id="count-template">
@@ -31,7 +33,9 @@
 
 <script type="text/template" id="bookmarks-item-template">
 
-  <p><%= Title %></p>
+  <p><%= title %></p>
+  <p><%= description %></p>
+  <p><%= tag %></p>
 <!--   <p>Description</p>
 <p>Tags</pp> -->
 
@@ -40,6 +44,10 @@
 
 <script type="text/template" id="tags-template">
   <p>Tag</p>
+</script>
+
+<script type="text/template" id="tag-item-template">
+  <p><%= tag %></p>
 </script>
 
 
