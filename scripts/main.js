@@ -21,6 +21,8 @@
     }
   });
 
+
+
   var TagsListView = Backbone.View.extend({
     template : _.template($('#tags-template').text()),
 
@@ -37,7 +39,7 @@
 
     initialize: function(){
       this.countView = new CountView({el: '.js-count'});
-      this.bookmarksListView = new BookmarksListView({el: '.js-bookmarks'});
+      this.bookmarksListView = new BookmarksListView({el: '.js-bookmarks-ul'});
       this.tagsListView = new TagsListView({el: '.js-tags'});
     },
 
